@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/contactheader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+</head>
+<body>
+<section class="header"> 
+    <nav>
+        <a href="/"><img src="/images/a22b5e12c9264c7db20f00daa5d829f9.png" alt="Company Logo"></a>
+        <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul> 
+                    <li><a href="/"> HOME</a></li>
+                    <li><a href="/about"> ABOUT </a></li>
+                    <li><a href="/products">PRODUCTS</a></li>
+                    <li class="active"></i><a href="#"> CONTACT</a></li>
+                </ul>
+            </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Contact Us</h1>
+    <p>We would love to respond to your queries and help you however we can. Feel free to get in touch with us.</p>
+</div>
+</section>
+
+<section class="location" data-aos="fade-up">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15449.631340205891!2d7.845374059582517!3d4.8410931085850155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067e34eab6dce63%3A0x9b6675b0f04c2154!2sEtinan!5e0!3m2!1sen!2sng!4v1625588994871!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         
+</section>
+
+<section class="contact-us">
+    <div class="rrow">
+        <div class="contact-col" data-aos="fade-right">
+            <h3>Contact Info</h3>
+            <div>
+                <i class="fa fa-business-time"></i>
+                <span>
+                   <h5>Working Hours</h5>
+                   <p>Weekdays: 08:00am - 08:00pm</p>
+                   <p>Weekends: 10:00am - 06:00pm</p>
+               </span>
+            </div>
+            <div>
+                <i class="fa fa-home" ></i>
+                <span>
+                    <h5>Address</h5> 
+                    <p>No. 1 Hospital Lane</p>
+                    <p>Eket, Akwa ibom</p>
+                </span> 
+            </div>
+            <div>
+                <i class="fa fa-phone" ></i>
+                <span>
+                    <h5>Call us</h5>
+                    <p>07058413834</p>
+                    <p>08056719636</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-open-text" ></i>
+                <span>
+                   <h5>Email us any complaints</h5>
+                   <p>ABfarms@yahoo.com</p>
+               </span>
+            </div>
+        </div>
+    <div class="contact-col" data-aos="fade-left">  
+     
+        <h3>Get in touch with us</h3>
+        <%=msg%><br>
+        <br>
+        <p>We are available 24/7 by fax, e-mail or by phone. You can also use our
+            quick contact form to ask a question about our products.</p>
+        
+        <form  action="/contact" method="post">
+            <input type="text" name = "full_name" placeholder="Enter your Full Name" required >
+            <input type="email" name="user_email"  placeholder="Email address" required >
+            <input type="text" name="phoneNumber"  placeholder="Phone number" required >
+            <input type="text" name="message" placeholder="Message" required>
+            <button type="submit" value="submit"  class="hero-btn red-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content" data-aos="fade-left">
+        <h3>ABs Farm</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor vitae felis. 
+        Mauris</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>  
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>    
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2021 ABs Farm</p>
+    </div>
+</footer>
+    
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.ri ght = "0px";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 150,
+    delay: 0, 
+    duration: 800
+  });
+</script>
+
+</body>
+</html>

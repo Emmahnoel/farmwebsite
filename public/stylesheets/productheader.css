@@ -1,0 +1,16 @@
+.header {
+    min-height: 65vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../Products/images/tim-mossholder-fqXWl0vD5JU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+.active a::after {
+    content: '';
+    width: 71%;
+    height: 2px;
+    background: lightslategray;
+    display: block;
+    position: absolute;
+  }
